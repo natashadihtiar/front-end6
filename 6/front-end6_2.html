@@ -5,14 +5,35 @@
 <body>
       <script>
 
-function de (str, sym) {
-	if (str.includes(sym))
-{
-var res = str.replace(sym, '');
+var str = 'Hello world';
+var exclude = ['l', 'e', 'd'];
+function foo (str, exclude){
 
-return res;}
-console.log(str.replace(res, ''));}
-console.log(de('hello', 'o'));
+	var NewString = '';
+
+
+	for (var i = 0; i < str.length; i++) {
+
+    for (var j = 0; j < exclude.length ; j++) {
+
+			if (str[i] !== exclude[j]){
+			NewString += str[i];
+		} 
+	} 
+
+} 
+	return NewString;
+}
+console.log(foo(str, exclude));
+
+// function de (str, sym) {
+// 	if (str.includes(sym))
+// {
+// var res = str.replace(sym, '');
+
+// return res;}
+// console.log(str.replace(res, ''));}
+// console.log(de('hello', 'o'));
 
 
 
