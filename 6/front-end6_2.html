@@ -23,6 +23,28 @@ function foo (str, exclude){
 }
 console.log(foo(str, exclude));
 
+var str = 'Helo world';
+var exclude = ['l', 'e'];
+function foo (str, exclude){
+
+	var NewString = '';
+
+
+		for (var j = 0; j < exclude.length; j++) {
+   	 	
+    		if (str.includes(exclude[j])) {
+    			
+    		var NewString = str.replace(exclude[j], "");
+			}	
+					
+		} 
+	
+return NewString;
+	
+}
+console.log(foo(str, exclude));
+
+
 
         </script>
 </body>
