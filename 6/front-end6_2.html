@@ -9,16 +9,13 @@ var str = 'Hello world';
 var exclude = ['l'];
 function foo (str, exclude) {
 	var NewString = '';
-
 		for (var i = 0; i < str.length; i++) {
        		if (!exclude.includes(str[i])) {
     		NewString += str[i];
 			}	
-		} 
-	
+		} 	
 return NewString;
 }
-
 console.log(foo(str, exclude));
 
       </script>
