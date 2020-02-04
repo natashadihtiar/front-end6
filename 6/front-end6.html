@@ -5,60 +5,37 @@
 <body>
       <script>
 
-// function getResult(x = 8, b = 3, sym) {
-  
-//   if (sym === "*" ) {
-//   	return x * b; 
-//   }
-//   else if (sym === "/") {
-//   	return x / b;
-//   }
-//   else if (sym === "+") {
-//   	return x + b;
-//   }
-//   else if (sym === "-") {
-//   	return x - b;
-//   }
-//   else if (sym === "%") {
-//   	return x % b;
-//   }
-//   else {
-//   	console.log('Error');
-//   } }
-//   console.log(getResult(3, 5, '+'));
-
-
 function getResult(num1 = 1, num2 = 2, sign) {
 
-switch(sign) {
-  case '*':
-    return num1 * num2; 
-    break;
+	switch(sign) {
+  		case '*':
+  		return num1 * num2; 
+  		break;
 
-  case '/':
-    return num1 / num2; 
-    break;
+  		case '/':
+    	return num1 / num2; 
+    	break;
 
-  case '+':
-    return num1 + num2; 
-    break;
+  		case '+':
+    	return num1 + num2; 
+    	break;
 
-  case '-':
-    return num1 - num2; 
-    break;
+		case '-':
+		return num1 - num2; 
+		break;
 
-  case '%':
-    return num1 % num2; 
-    break;
+  		case '%':
+   		return num1 % num2; 
+    	break;
 
-  default:
-    console.log("Error");
-    break;
-}
+  		default:
+    	console.log("Error");
+    	break;
+	}
 }
 
 console.log(getResult(5, 6, '+'));
 
         </script>
 </body>
-</html> 
+</html>
