@@ -5,47 +5,27 @@
 <body>
       <script>
 
-var str = 'Helo world';
+var str = 'Hello world';
 var exclude = ['l', 'd'];
-function foo (str, exclude){
+function foo (str, exclude) {
 
 	var NewString = '';
-	for (var i = 0; i < str.length; i++) {
-		for (var j = 0; j < exclude.length; j++) {
+
+
+		for (var i = 0; i < str.length; i++) {
    	 	
-    		if (exclude[j]!=str[i]) {
+    		if (!exclude.includes(str[i])) {
+
     		NewString += str[i];
-			}			
-		} 
-	} 
 
-	return NewString;
-}
-console.log(foo(str, exclude));
-
-var str = 'Helo world';
-var exclude = ['l', 'e'];
-function foo (str, exclude){
-
-	var NewString = '';
-
-
-		for (var j = 0; j < exclude.length; j++) {
-   	 	
-    		if (str.includes(exclude[j])) {
-    			
-    		var NewString = str.replace(exclude[j], "");
 			}	
-					
 		} 
 	
 return NewString;
-	
 }
+
 console.log(foo(str, exclude));
 
-
-
-        </script>
+      </script>
 </body>
 </html> 
